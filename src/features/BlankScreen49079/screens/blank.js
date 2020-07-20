@@ -87,7 +87,7 @@ export class _Blank extends React.Component {
           borderTopWidth: 0,
           borderBottomWidth: 0,
           borderRadius: 0,
-          textShadow: "0pt 0pt 12pt #000000",
+          textShadow: "0pt 0pt 0pt #000000",
           textDecoration: "none"
         }}
       >
@@ -213,7 +213,7 @@ export class _Blank extends React.Component {
           backgroundColor: "#ffffff",
           fontStyle: "normal",
           fontWeight: "normal",
-          textShadow: "0pt 0pt 0pt #000000",
+          textShadow: "0pt 0pt 23pt #000000",
           textDecoration: "none"
         }}
       />
