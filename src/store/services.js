@@ -1,4 +1,10 @@
 import axios from "axios"
+import {} from "react-native-dotenv"
+const newPlugin201 = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7931/storyboard/9129/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobile200API = axios.create({
   baseURL: "https://mobile-200-dev-7931.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
@@ -14,6 +20,42 @@ function api_v1_customtext_update(requestBody) {
 }
 function api_v1_customtext_partial_update(requestBody) {
   return mobile200API.patch(`/api/v1/customtext/{id}/`, requestBody)
+}
+function api_v1_gjhuyuit_list() {
+  return mobile200API.get(`/api/v1/gjhuyuit/`)
+}
+function api_v1_gjhuyuit_create(requestBody) {
+  return mobile200API.post(`/api/v1/gjhuyuit/`, requestBody)
+}
+function api_v1_gjhuyuit_read() {
+  return mobile200API.get(`/api/v1/gjhuyuit/{id}/`)
+}
+function api_v1_gjhuyuit_update(requestBody) {
+  return mobile200API.put(`/api/v1/gjhuyuit/{id}/`, requestBody)
+}
+function api_v1_gjhuyuit_partial_update(requestBody) {
+  return mobile200API.patch(`/api/v1/gjhuyuit/{id}/`, requestBody)
+}
+function api_v1_gjhuyuit_delete() {
+  return mobile200API.delete(`/api/v1/gjhuyuit/{id}/`)
+}
+function api_v1_hgfdjfd_list() {
+  return mobile200API.get(`/api/v1/hgfdjfd/`)
+}
+function api_v1_hgfdjfd_create(requestBody) {
+  return mobile200API.post(`/api/v1/hgfdjfd/`, requestBody)
+}
+function api_v1_hgfdjfd_read() {
+  return mobile200API.get(`/api/v1/hgfdjfd/{id}/`)
+}
+function api_v1_hgfdjfd_update(requestBody) {
+  return mobile200API.put(`/api/v1/hgfdjfd/{id}/`, requestBody)
+}
+function api_v1_hgfdjfd_partial_update(requestBody) {
+  return mobile200API.patch(`/api/v1/hgfdjfd/{id}/`, requestBody)
+}
+function api_v1_hgfdjfd_delete() {
+  return mobile200API.delete(`/api/v1/hgfdjfd/{id}/`)
 }
 function api_v1_homepage_list() {
   return mobile200API.get(`/api/v1/homepage/`)
@@ -71,6 +113,18 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_gjhuyuit_list,
+  api_v1_gjhuyuit_create,
+  api_v1_gjhuyuit_read,
+  api_v1_gjhuyuit_update,
+  api_v1_gjhuyuit_partial_update,
+  api_v1_gjhuyuit_delete,
+  api_v1_hgfdjfd_list,
+  api_v1_hgfdjfd_create,
+  api_v1_hgfdjfd_read,
+  api_v1_hgfdjfd_update,
+  api_v1_hgfdjfd_partial_update,
+  api_v1_hgfdjfd_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
