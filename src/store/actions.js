@@ -277,127 +277,171 @@ export const rest_auth_user_partial_updateFailed = error => ({
   type: types.REST_AUTH_USER_PARTIAL_UPDATE_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_list = () => ({ type: types.API_V1_GJHUYUIT_LIST })
 export const api_v1_gjhuyuit_listSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_LIST_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_listFailed = error => ({
   type: types.API_V1_GJHUYUIT_LIST_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_create = () => ({
   type: types.API_V1_GJHUYUIT_CREATE
 })
+
 export const api_v1_gjhuyuit_createSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_CREATE_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_createFailed = error => ({
   type: types.API_V1_GJHUYUIT_CREATE_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_read = () => ({ type: types.API_V1_GJHUYUIT_READ })
 export const api_v1_gjhuyuit_readSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_READ_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_readFailed = error => ({
   type: types.API_V1_GJHUYUIT_READ_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_update = () => ({
   type: types.API_V1_GJHUYUIT_UPDATE
 })
+
 export const api_v1_gjhuyuit_updateSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_UPDATE_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_updateFailed = error => ({
   type: types.API_V1_GJHUYUIT_UPDATE_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_partial_update = () => ({
   type: types.API_V1_GJHUYUIT_PARTIAL_UPDATE
 })
+
 export const api_v1_gjhuyuit_partial_updateSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_PARTIAL_UPDATE_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_partial_updateFailed = error => ({
   type: types.API_V1_GJHUYUIT_PARTIAL_UPDATE_FAILED,
   error
 })
+
 export const api_v1_gjhuyuit_delete = () => ({
   type: types.API_V1_GJHUYUIT_DELETE
 })
+
 export const api_v1_gjhuyuit_deleteSucceeded = response => ({
   type: types.API_V1_GJHUYUIT_DELETE_SUCCEEDED,
   response
 })
+
 export const api_v1_gjhuyuit_deleteFailed = error => ({
   type: types.API_V1_GJHUYUIT_DELETE_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_list = () => ({ type: types.API_V1_HGFDJFD_LIST })
 export const api_v1_hgfdjfd_listSucceeded = response => ({
   type: types.API_V1_HGFDJFD_LIST_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_listFailed = error => ({
   type: types.API_V1_HGFDJFD_LIST_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_create = () => ({
   type: types.API_V1_HGFDJFD_CREATE
 })
+
 export const api_v1_hgfdjfd_createSucceeded = response => ({
   type: types.API_V1_HGFDJFD_CREATE_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_createFailed = error => ({
   type: types.API_V1_HGFDJFD_CREATE_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_read = () => ({ type: types.API_V1_HGFDJFD_READ })
 export const api_v1_hgfdjfd_readSucceeded = response => ({
   type: types.API_V1_HGFDJFD_READ_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_readFailed = error => ({
   type: types.API_V1_HGFDJFD_READ_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_update = () => ({
   type: types.API_V1_HGFDJFD_UPDATE
 })
+
 export const api_v1_hgfdjfd_updateSucceeded = response => ({
   type: types.API_V1_HGFDJFD_UPDATE_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_updateFailed = error => ({
   type: types.API_V1_HGFDJFD_UPDATE_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_partial_update = () => ({
   type: types.API_V1_HGFDJFD_PARTIAL_UPDATE
 })
+
 export const api_v1_hgfdjfd_partial_updateSucceeded = response => ({
   type: types.API_V1_HGFDJFD_PARTIAL_UPDATE_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_partial_updateFailed = error => ({
   type: types.API_V1_HGFDJFD_PARTIAL_UPDATE_FAILED,
   error
 })
+
 export const api_v1_hgfdjfd_delete = () => ({
   type: types.API_V1_HGFDJFD_DELETE
 })
+
 export const api_v1_hgfdjfd_deleteSucceeded = response => ({
   type: types.API_V1_HGFDJFD_DELETE_SUCCEEDED,
   response
 })
+
 export const api_v1_hgfdjfd_deleteFailed = error => ({
   type: types.API_V1_HGFDJFD_DELETE_FAILED,
+  error
+})
+export const newplugin202_get__read = new_param => ({
+  type: types.NEWPLUGIN202_GET__READ,
+  new_param
+})
+export const newplugin202_get__readSucceeded = response => ({
+  type: types.NEWPLUGIN202_GET__READ_SUCCEEDED,
+  response
+})
+export const newplugin202_get__readFailed = error => ({
+  type: types.NEWPLUGIN202_GET__READ_FAILED,
   error
 })

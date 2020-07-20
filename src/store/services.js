@@ -1,5 +1,10 @@
 import axios from "axios"
 import {} from "react-native-dotenv"
+const newPlugin202 = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7931/storyboard/9129/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const newPlugin201 = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7931/storyboard/9129/",
@@ -9,6 +14,9 @@ const mobile200API = axios.create({
   baseURL: "https://mobile-200-dev-7931.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+function newplugin202_get__read(new_param) {
+  return newPlugin202.get(`/`)
+}
 function api_v1_customtext_list() {
   return mobile200API.get(`/api/v1/customtext/`)
 }
@@ -109,6 +117,7 @@ function rest_auth_user_partial_update(requestBody) {
   return mobile200API.patch(`/rest-auth/user/`, requestBody)
 }
 export const apiService = {
+  newplugin202_get__read,
   api_v1_customtext_list,
   api_v1_customtext_read,
   api_v1_customtext_update,
